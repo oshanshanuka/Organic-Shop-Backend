@@ -116,7 +116,41 @@
 		},
 		{
 			"name": "contacts",
-			"item": []
+			"item": [
+				{
+					"name": "SaveContacts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"spinach\",\r\n    \"price\": 200,\r\n    \"currency\": \"LKR\",\r\n    \"image\": \"spinach.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/contacts/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contacts",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllContacts",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
